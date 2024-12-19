@@ -1210,6 +1210,31 @@ Transform:
   m_Father: {fileID: 2052038043}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &880013392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7889797555800066759, guid: d3d9ae1f3767e4954887e7b65035692b, type: 3}
+  m_PrefabInstance: {fileID: 7889797555655676069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &880013395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880013392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &939992252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1731,7 @@ GameObject:
   - component: {fileID: 1736856018}
   - component: {fileID: 1736856017}
   - component: {fileID: 1736856016}
+  - component: {fileID: 1736856019}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1779,6 +1805,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 26.791, y: -12.376, z: 0}
+--- !u!114 &1736856019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736856015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1785828865
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,9 +2425,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6357947935782515235, guid: c631d2836bdbdef49b18bf99206ebe43, type: 3}
+      propertyPath: NumCars
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357947935782515235, guid: c631d2836bdbdef49b18bf99206ebe43, type: 3}
       propertyPath: TextMesh
       value: 
       objectReference: {fileID: 179839229}
+    - target: {fileID: 6357947935782515235, guid: c631d2836bdbdef49b18bf99206ebe43, type: 3}
+      propertyPath: TimeScale
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c631d2836bdbdef49b18bf99206ebe43, type: 3}
 --- !u!1001 &7889797555655676069
@@ -2432,6 +2499,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3544297083661784925, guid: d3d9ae1f3767e4954887e7b65035692b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7889797555800066759, guid: d3d9ae1f3767e4954887e7b65035692b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
