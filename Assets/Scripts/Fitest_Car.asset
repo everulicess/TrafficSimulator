@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc39209a977fcf141867b1cb69ab7df7, type: 3}
+  m_Name: Fitest_Car
+  m_EditorClassIdentifier: 
+  carSettings:
+    steeringSensitivity: 0
+    lookAhead: 0
+    maxTorque: 0
+    maxSteerAngle: 0
+    maxBrakeTorque: 0
+    accelCornerMax: 0
+    brakeCornerMax: 0
+    accelVelocityThreshold: 0
+    brakeVelocityThreshold: 0
+    antiroll: 0
+    fitness: 0
