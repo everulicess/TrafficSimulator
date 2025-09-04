@@ -2380,6 +2380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6357947935782515232, guid: c631d2836bdbdef49b18bf99206ebe43, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6357947935782515234, guid: c631d2836bdbdef49b18bf99206ebe43, type: 3}
       propertyPath: m_RootOrder
       value: 8

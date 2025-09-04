@@ -44,7 +44,8 @@ public class AIController : MonoBehaviour
             carSettings = CarSettings_ScrObj.carSettings;
         }
         ds = this.GetComponentsInChildren<Drive>();
-        circuit = GameObject.FindGameObjectWithTag("circuit").GetComponent<Circuit>();
+        //circuit = GameObject.FindGameObjectWithTag("circuit").GetComponent<Circuit>();
+        circuit = FindObjectOfType<Circuit>();
         target = circuit.waypoints[currentWP].transform.position;
         rb = this.GetComponent<Rigidbody>();
 
@@ -94,7 +95,7 @@ public class AIController : MonoBehaviour
         {
             currentTrackerWP++;
             carSettings.fitness++;
-            if (currentTrackerWP >= circuit.waypoints.Length)
+            if (currentTrackerWP >= circuit.waypoints.Count)
                 currentTrackerWP = 0;
         }
     }
@@ -156,14 +157,6 @@ public class AIController : MonoBehaviour
             brakelight.SetActive(false);
         }
 
-        /*if (distanceToTarget < 4)
-        {
-            currentWP++;
-            if (currentWP >= circuit.waypoints.Length)
-                currentWP = 0;
-
-            target = circuit.waypoints[currentWP].transform.position;
-        }*/
     }
 }
 

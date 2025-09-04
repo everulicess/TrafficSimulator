@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Fitest_Car
   m_EditorClassIdentifier: 
   carSettings:
-    steeringSensitivity: 0
-    lookAhead: 0
-    maxTorque: 0
-    maxSteerAngle: 0
-    maxBrakeTorque: 0
-    accelCornerMax: 0
-    brakeCornerMax: 0
-    accelVelocityThreshold: 0
-    brakeVelocityThreshold: 0
-    antiroll: 0
-    fitness: 0
+    steeringSensitivity: 0.01999835
+    lookAhead: 19.943735
+    maxTorque: 199.1789
+    maxSteerAngle: 59.98864
+    maxBrakeTorque: 5166.554
+    accelCornerMax: 20.384617
+    brakeCornerMax: 4.723282
+    accelVelocityThreshold: 20.183672
+    brakeVelocityThreshold: 9.946181
+    antiroll: 5098.823
+    fitness: 61

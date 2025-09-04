@@ -8,7 +8,7 @@ public class RoadHelper : MonoBehaviour
     public GameObject roadStraight, roadCorner, road3Way, road4Way, roadEnd;
     Dictionary<Vector3Int, GameObject> roadDictionary = new Dictionary<Vector3Int, GameObject>();
     HashSet<Vector3Int> fixRoadCandidates = new HashSet<Vector3Int>();
-
+    Circuit circuit;
     public  List<Vector3Int> GetRoadPositions()
     {
         return roadDictionary.Keys.ToList();

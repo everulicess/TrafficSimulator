@@ -10,6 +10,8 @@ public class Visualizer : MonoBehaviour
 
     public RoadHelper roadHelper;
 
+    public Circuit circuitHelper;
+
     public StructureHelper structureHelper;
 
     int length = 8;
@@ -67,6 +69,8 @@ public class Visualizer : MonoBehaviour
                     tempPosition = currentPosition;
                     currentPosition += direction * length;
                     roadHelper.PlaceStreetPositions(tempPosition, Vector3Int.RoundToInt(direction), length);
+                    circuitHelper.PlaceWayPoint(tempPosition, Vector3Int.RoundToInt(direction), length);
+
                     Length -= 2;
 
                     positions.Add(currentPosition);

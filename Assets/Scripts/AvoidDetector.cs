@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class AvoidDetector : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class AvoidDetector : MonoBehaviour
     public float wanderDistance = 4;
     public float avoidLength = 1;
     public bool reverse = false;
-    Rigidbody rb;
+    [SerializeField]Rigidbody rb;
 
     void Start()
     {
